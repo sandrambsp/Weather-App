@@ -51,6 +51,7 @@ li {
 }
 .days {
   margin: 25px 0;
+  padding: 0;
 }
 .sun-icon {
   color: #ffd900;
