@@ -17,9 +17,6 @@ p {
 #current-city {
   font-weight: 600;
 }
-.container-currently {
-  margin-bottom: 20px;
-}
 .big-sun-icon {
   font-size: 90px;
   color: #ffd900;
@@ -41,6 +38,7 @@ ul {
 }
 li {
   list-style: none;
+  margin: 15px 0;
 }
 
 .right-icons {
