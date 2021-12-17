@@ -1,0 +1,57 @@
+.card {
+  width: 60%;
+  margin: 50px auto;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  font-family: "Source Sans 3", sans-serif;
+  text-align: center;
+}
+p {
+  font-size: 12px;
+}
+.container-search {
+  margin-bottom: 20px;
+}
+.today {
+  font-size: 16px;
+}
+#current-city {
+  font-weight: 600;
+}
+.container-currently {
+  margin-bottom: 20px;
+}
+.big-sun-icon {
+  font-size: 90px;
+  color: #ffd900;
+  padding-right: 0;
+}
+.units {
+  position: relative;
+  top: -10px;
+  font-size: 12px;
+}
+#celsius,
+#fahrenheit {
+  text-decoration: none;
+}
+.right-icons {
+  font-size: 20px;
+}
+.right-line {
+  margin: 12px 0;
+}
+.days {
+  margin: 25px 0;
+}
+.sun-icon {
+  color: #ffd900;
+  font-size: 30px;
+}
+.rain-icon {
+  color: rgba(20, 61, 172, 0.733);
+  font-size: 30px;
+}
+.cloud-icon {
+  color: gray;
+  font-size: 30px;
+}
