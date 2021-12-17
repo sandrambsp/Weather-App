@@ -34,10 +34,15 @@ p {
 #fahrenheit {
   text-decoration: none;
 }
+
+li {
+  list-style: none;
+}
+
 .right-icons {
   font-size: 20px;
 }
-.right-line {
+.right-col {
   margin: 12px 0;
 }
 .days {
@@ -56,5 +61,5 @@ p {
   font-size: 30px;
 }
 .signature {
-  font-size: smaller;
+  font-size: small;
 }
