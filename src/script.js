@@ -31,7 +31,9 @@ function showTemperature(response) {
   tempCelsius.innerHTML = temperature;
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind-speed").innerHTML = response.data.wind.speed;
+  document.querySelector("#wind-speed").innerHTML = Math.round(
+    response.data.wind.speed
+  );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#temp-min").innerHTML = Math.round(
