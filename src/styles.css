@@ -24,6 +24,7 @@ p {
   font-size: 90px;
   color: #ffd900;
   padding-right: 0;
+  text-align: right;
 }
 .units {
   position: relative;
@@ -48,6 +49,7 @@ li {
 .right-col {
   margin: 12px 0;
   padding: 0;
+  text-align: left;
 }
 .days {
   margin: 25px 0;
@@ -62,7 +64,7 @@ li {
   font-size: 30px;
 }
 .cloud-icon {
-  color: gray;
+  color: rgb(114, 101, 101);
   font-size: 30px;
 }
 .signature {
