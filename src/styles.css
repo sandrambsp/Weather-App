@@ -34,7 +34,10 @@ p {
 #fahrenheit {
   text-decoration: none;
 }
-
+ul {
+  padding: 0;
+  margin: 0;
+}
 li {
   list-style: none;
 }
@@ -44,6 +47,7 @@ li {
 }
 .right-col {
   margin: 12px 0;
+  padding: 0;
 }
 .days {
   margin: 25px 0;
