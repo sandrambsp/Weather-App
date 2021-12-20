@@ -11,6 +11,9 @@ p {
 .container-search {
   margin-bottom: 20px;
 }
+#description {
+  text-transform: capitalize;
+}
 .today {
   font-size: 16px;
 }
