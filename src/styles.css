@@ -35,6 +35,10 @@ p {
 #fahrenheit {
   text-decoration: none;
 }
+#current-icon {
+  position: relative;
+  left: -25px;
+}
 ul {
   padding: 0;
   margin: 0;
@@ -56,6 +60,8 @@ li {
 }
 .col-right {
   text-align: left;
+  position: relative;
+  left: -25px;
 }
 .days {
   margin: 25px 0;
