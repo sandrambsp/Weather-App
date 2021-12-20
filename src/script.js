@@ -26,11 +26,12 @@ let now = new Date();
 currentDate.innerHTML = formatDate(now);
 
 function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let tempCelsius = document.querySelector(".temperature");
+  let tempElement = document.querySelector("#temperature");
   let iconElement = document.querySelector("#current-icon");
 
-  tempCelsius.innerHTML = temperature;
+  celsiusTemperature = Math.round(response.data.main.temp);
+
+  tempElement.innerHTML = celsiusTemperature;
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind-speed").innerHTML = Math.round(
@@ -42,7 +43,6 @@ function showTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  console.log(response.data.weather[0].icon);
 }
 
 function search(city) {
@@ -74,7 +74,29 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let tempElement = document.querySelector("#temperature");
+  tempElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#temperature");
+  tempElement.innerHTML = celsiusTemperature;
+}
+
+let celsiusTemperature = null;
+
 let button = document.querySelector("#current-location");
 button.addEventListener("click", getCurrentLocation);
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 search("Porto");
