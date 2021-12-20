@@ -50,8 +50,12 @@ li {
   padding: 5px;
   text-align: left;
 }
-.right-col {
+.wind,
+.humid {
   display: inline;
+}
+.col-right {
+  text-align: left;
 }
 .days {
   margin: 25px 0;
