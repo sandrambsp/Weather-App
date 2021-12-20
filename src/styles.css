@@ -1,12 +1,13 @@
 .card {
   max-width: 600px;
   margin: 50px auto;
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
   font-family: "Source Sans 3", sans-serif;
   text-align: center;
 }
 p {
   font-size: 13px;
+  margin-bottom: 0;
 }
 .container-search {
   margin-bottom: 20px;
@@ -15,6 +16,10 @@ p {
   text-transform: capitalize;
 }
 #current-city {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#temperature {
   font-weight: 700;
 }
 .units {
@@ -41,8 +46,8 @@ li {
 }
 
 .right-icons {
-  font-size: 20px;
-  padding: 10px;
+  font-size: 14px;
+  padding: 5px;
   text-align: left;
 }
 .right-col {
@@ -52,17 +57,21 @@ li {
   margin: 25px 0;
   padding: 0;
 }
-.sun-icon {
-  color: #ffd900;
-  font-size: 30px;
+.min-temp {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
 }
-.rain-icon {
-  color: rgba(20, 61, 172, 0.733);
-  font-size: 30px;
+.max-temp {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
 }
-.cloud-icon {
-  color: rgb(114, 101, 101);
-  font-size: 30px;
+.forecast-temp {
+  margin: 0;
+  padding: 0;
+}
+.forecast-icon {
+  margin: 0;
+  padding: 0;
 }
 .signature {
   font-size: 11px;
