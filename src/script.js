@@ -28,6 +28,8 @@ currentDate.innerHTML = formatDate(now);
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let tempCelsius = document.querySelector(".temperature");
+  let iconElement = document.querySelector("#current-icon");
+
   tempCelsius.innerHTML = temperature;
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -36,13 +38,11 @@ function showTemperature(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
-  document.querySelector("#temp-min").innerHTML = Math.round(
-    response.data.main.temp_min
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  document.querySelector("#temp-max").innerHTML = Math.round(
-    response.data.main.temp_max
-  );
-  console.log(response.data);
+  console.log(response.data.weather[0].icon);
 }
 
 function search(city) {
