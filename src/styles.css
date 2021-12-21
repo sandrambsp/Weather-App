@@ -27,10 +27,6 @@ p {
   top: -10px;
   font-size: 12px;
 }
-.units .active {
-  color: rgb(0, 0, 0);
-  cursor: text;
-}
 #current-icon {
   position: relative;
   left: -25px;
