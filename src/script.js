@@ -21,6 +21,32 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2 days">
+    <h6 class="forecast-day">${day}</h6>
+    <p class="forecast-temp">
+      <span class="min-temp">6º</span>
+      <span class="max-temp">11º</span>
+    </p>
+    <img
+      class="forecast-icon"
+      src="	http://openweathermap.org/img/wn/04d@2x.png"
+      width="30px"
+    />
+  </div>
+`;
+  });
+  forecatsHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let currentDate = document.querySelector(".today");
 let now = new Date();
 currentDate.innerHTML = formatDate(now);
@@ -103,3 +129,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 search("Porto");
+displayForecast();
