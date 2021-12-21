@@ -31,10 +31,6 @@ p {
   color: rgb(0, 0, 0);
   cursor: text;
 }
-#celsius,
-#fahrenheit {
-  text-decoration: none;
-}
 #current-icon {
   position: relative;
   left: -25px;
