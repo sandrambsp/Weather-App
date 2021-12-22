@@ -20,6 +20,7 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
+
 let currentDate = document.querySelector(".today");
 let now = new Date();
 currentDate.innerHTML = formatDate(now);
@@ -51,9 +52,9 @@ function displayForecast(response) {
     </p>
     <img
       class="forecast-icon"
-      src="	http://openweathermap.org/img/wn/${
-        forecastDay.weather[0].icon
-      }@2x.png"
+      src="images/${forecastDay.weather[0].icon}${
+          forecastDay.weather[0].id
+        }.svg"
       width="30px"
     />
   </div>
@@ -87,7 +88,7 @@ function showTemperature(response) {
     response.data.weather[0].description;
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `images/${response.data.weather[0].icon}${response.data.weather[0].id}.svg`
   );
   getForecast(response.data.coord);
 }
