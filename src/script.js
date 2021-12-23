@@ -61,7 +61,7 @@ function displayForecast(response) {
 `;
     }
   });
-  forecatsHTML = forecastHTML + `</div>`;
+  forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
