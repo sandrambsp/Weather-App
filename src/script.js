@@ -44,7 +44,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-  <div class="col-2 days">
+  <div class="col-sm-2 days">
     <h6 class="forecast-day">${formatDay(forecastDay.dt)}</h6>
     <p class="forecast-temp">
       <span class="min-temp">${Math.round(forecastDay.temp.min)}º</span>

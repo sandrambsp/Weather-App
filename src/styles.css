@@ -27,10 +27,7 @@ p {
   top: -10px;
   font-size: 12px;
 }
-#current-icon {
-  position: relative;
-  left: -25px;
-}
+
 ul {
   padding: 0;
   margin: 0;
@@ -44,18 +41,12 @@ li {
 
 .right-icons {
   font-size: 14px;
-  padding: 5px;
-  text-align: left;
 }
 .wind,
 .humid {
   display: inline;
 }
-.col-right {
-  text-align: left;
-  position: relative;
-  left: -25px;
-}
+
 .days {
   margin: 25px 0;
   padding: 0;
