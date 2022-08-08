@@ -4,6 +4,7 @@
   background: linear-gradient(to top, #ace0f9 0%, #caf8da 100%);
   font-family: "Source Sans 3", sans-serif;
   text-align: center;
+  border: none;
 }
 p {
   font-size: 13px;
